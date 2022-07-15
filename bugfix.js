@@ -15,7 +15,7 @@ function applyFix()
   var pageText = document.body.innerHTML;
 
   document.body.innerHTML = pageText.replace(
-    /\$([\d,]+(?:\.\d+)?)/g,
+    /\$([\d,]+(?:\.\/\d+)?)/g,
     function (string, c1) {
 
       return `$${c1} nzd`;
